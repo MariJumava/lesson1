@@ -3,34 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson1</title>
+    <title>Lesson1-2</title>
 </head>
 <body>
-    <header>
-<img src="https://www.instagram.com/p/CJdHBAwHLif/" alt="Maria-foto">
-        <h1>ДЖУМОВА МАРИЯ</h1>
-        <b>Frontend разработчик</b>
-        <p>Не так давно стала изучать вэб-дизайн. Пока мне это нравиться и все интересно, надеюсь у меня все получиться.</p>
-    </header>
-    <main>
-        <h2>Опыт работы</h2>
-        <p><u>Тренер тренажерного зала GYM24</u></p>
-        <p>Составление индивидуального плана тренировок и питания. консультации по проблемам со спиной: грыжи, протрузии, сколиоз, кифоз и пр.</p>
-        <p><u>Технолог на мед препаратах</u></p>
-        <p>Ведение технологических прецессов и контроль качества выпускаемой продукции. Ведение основной документации цеха.</p>
-        <h2>Образование</h2>
-        <h3>БГТУ</h3>
-        <p>Инженер-химик-технолог, <i>2006 - 2011</i></p>
-        <h3>БНТУ</h3>
-        <p>Курсы по бодибилдингу, <i>2014 - 2015</i></p>
-    </main>
-    <footer>
-        <h3>Контакты</h3>
-        <ul>
-            <li><a href="https://www.instagram.com/mari_abdrafikava/">Instagram</a></li>
-            <li>email: marfavasilevna@inbox </li>
-            <li><i>Телефон +375293392985</i></li>
-        </ul>
-    </footer>
+    <form action="signin" method="post">
+        <input type="text" name="username" placeholder="Name">
+        <input type="tel" name="tel" placeholder="Telephone">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <br>
+        <label for="lesson">Выберите урок:</label>
+    <select name="lesson" id="lesson">
+        <option value="maths">Математика</option>
+        <option value="chemistry">Химия</option>
+    </select>
+    <br>
+    <textarea name="text" placeholder="Напишите ваши пожелания"></textarea>
+    <br>
+    <button>Отправить форму</button>
+    <button>Сбросить форму</button>
+    </form>
 </body>
 </html>
